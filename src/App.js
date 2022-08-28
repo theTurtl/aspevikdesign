@@ -25,9 +25,13 @@ function App() {
         </div>
         <div className='animationBanner'>
           <div className='animationContainer'></div>
-          <div className='bannerToggle'>
-          </div>
+          <div className='bannerToggle'></div>
+          <div className='garanti'>
+            <div className='garantiGraphic'></div>
+            <p>Fornøyd Garanti</p>
         </div>
+        </div>
+        
         
       </div>
     </div>
