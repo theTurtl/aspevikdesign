@@ -46,3 +46,161 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--white: #F6F1F0;
+	--black: #0D1B1E;
+	--red: #FF6666;
+	--turkis: #8EBAAA;
+}
+
+#root {
+	font-family: 'Quicksand', sans-serif;
+	background-color: var(--white);
+
+}
+
+.introSection {
+	position: relative;
+	height: 100vh;
+	padding: 0px 80px;
+}
+
+.navBar {
+	padding-top: 80px;
+	position: relative;
+	margin-bottom: 42px;
+}
+
+.leftContainer {
+	display: inline-block;
+}
+
+.logo {
+	float: left;
+	width: 124px;
+	height: 58px;
+	background-image: url("/src/images/Logo2.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.statusBar {
+	float: right;
+	background-color: var(--black);
+	width: max-content;
+	padding: 16px;
+	color: var(--white);
+	border-radius: 16px;
+	font-weight: 700;
+	margin: 6px 0px 0px 32px;
+
+}
+
+
+.rightContainer {
+	float: right;
+	display: inline-flex;
+	font-size: 18px;
+	padding-top: 8px;
+}
+
+.biggerProjects {
+	position: relative;
+	padding: 16px 24px;
+	border: 1px solid var(--black);
+	color: var(--black);
+	font-weight: 600;
+	border-radius: 8px;
+	height: max-content;
+
+}
+
+.arriveSoon {
+	position: absolute;
+	background-color: var(--red);
+	padding: 8px 12px;
+	border-radius: 16px;
+	font-weight: 400;
+	top: -16px;
+	right: 4px;
+	font-size: 14px;
+}
+
+.contactBut {
+
+	padding: 16px 24px;
+	background-color: var(--black);
+	width: max-content;
+	color: var(--white);
+	border-radius: 8px;
+	border: 1px solid var(--black);
+	margin-left: 4px;
+	font-weight: 600;
+	height: max-content;
+}
+
+.languageSwitcher {
+	position: relative;
+	padding: 16px 16px;
+	border: 1px solid var(--black);
+	width: max-content;
+	border-radius: 8px;
+	margin-left: 4px;
+}
+
+.languageSwitcher p {
+	
+}
+
+.downArrow {
+	position: absolute;
+	background-image: url('/src/images/downArrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 4px;
+	width: 100%;
+	padding: 0px;
+	left: 0;
+	bottom: 8px;
+
+}
+
+.animationBanner {
+
+}
+
+.animationContainer {
+	background-image: url('/src/images/placeholder.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 80px;
+	left: 80px;
+	top: 200px;
+	bottom: 200px;
+	border-radius: 42px;
+	min-height: 384px;
+}
+
+.bannerToggle {
+	background-image: url('/src/images/togglePlaceholder.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	height: 48px;
+	position: absolute;
+	bottom: 112px;
+	left: 0;
+	right: 0;
+}
+
+
+
+
