@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <div className='introSection'>
+      <section className='introSection'>
         <div className='navBar'>
           <div className='leftContainer'>
             <div className='logo'></div>
@@ -33,7 +33,28 @@ function App() {
         </div>
         
         
-      </div>
+      </section>
+     
+      <section className='aboutMe'>
+        <div className='sectionLimiter'>
+        <div className='aboutContainer'>
+          <div className='aboutTextContainer'>
+            <div className='nameText'>
+              <p>Kdgis, mitt navn er</p>
+              <h7>Adrian Aspevik :)</h7>
+            </div>
+            <div className='aboutText'>
+              <h3>Jeg bygger applikasjoner.</h3>
+              <h4>Jeg er 26 år, og er en designer og utvikler 
+                basert i Bergen. Min største interesse er å lage 
+                løsninger som konverterer og gir verdi for din virksomhet.
+              </h4>
+            </div>
+          </div>
+          <div className='aboutIllustration'></div>
+        </div>
+        </div>
+      </section>
     </div>
   );
 }

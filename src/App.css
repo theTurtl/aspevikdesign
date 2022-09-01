@@ -47,6 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -60,6 +67,16 @@ table {
 	font-family: 'Quicksand', sans-serif;
 	background-color: var(--white);
 
+}
+
+.App {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+section {
+	scroll-snap-align: start;
 }
 
 .introSection {
@@ -176,6 +193,8 @@ table {
 	top: 188px;
 	bottom: 168px;
 	min-height: 380px;
+	max-width: 2000px;
+	margin: auto;
 }
 
 .animationContainer {
@@ -224,4 +243,88 @@ table {
 
 
 
+.aboutMe {
+	height: 100vh;
+	width: 100%;
+	background-color: var(--black);
+	/*display: table;*/
+}
 
+.sectionLimiter {
+	position: relative;
+	/*display: table-cell;
+  	vertical-align: middle;*/
+  	height: 100%;
+  	max-width: 1080px;
+	margin: auto;
+	
+}
+
+.aboutContainer {
+	position: absolute;
+	background-color: var(--white);
+	height: max-content;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 80px;
+	padding: 80px;
+	display: flex;
+	
+}
+
+.aboutTextContainer {
+	flex: 50%;
+}
+.nameText {
+	margin-bottom: 64px;
+	
+}
+
+.nameText p {
+	font-weight: 100;
+	color: var(--black);
+	opacity: 0.75;
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.nameText h7 {
+	font-weight: 400;
+	color: var(--black);
+	font-size: 48px;
+}
+
+.aboutText {
+	flex: 50%;
+}
+
+.aboutText h3 {
+	font-weight: 800;
+	font-size: 48px;
+	color: var(--black);
+	line-height: 1.2;
+	margin-bottom: 32px;
+}
+
+.aboutText h4 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.3;
+}
+
+.aboutIllustration {
+	flex: 50%;
+	background-image: url('/src/images/meantimeIllustrationProfile.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 900px) {
+	.aboutContainer {
+	  -webkit-flex-direction: column;
+	  flex-direction: column;
+	}
+  }
